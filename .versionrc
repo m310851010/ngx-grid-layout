@@ -1,10 +1,10 @@
 {
     "path": ".",
     "tag-prefix": "v",
-    "releaseCommitMessageFormat": "chore(release): angular-grid-layout@{{currentTag}}",
+    "releaseCommitMessageFormat": "chore(release): ngx-grid-layout@{{currentTag}}",
     "packageFiles": [
       {
-        "filename": "projects/angular-grid-layout/package.json",
+        "filename": "projects/ngx-grid-layout/package.json",
         "type": "json"
       }
     ],
@@ -14,7 +14,7 @@
         "type": "json"
       },
       {
-        "filename": "projects/angular-grid-layout/package.json",
+        "filename": "projects/ngx-grid-layout/package.json",
         "type": "json"
       }
     ]

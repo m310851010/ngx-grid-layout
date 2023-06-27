@@ -10,8 +10,8 @@
       ],
       "parserOptions": {
         "project": [
-          "projects/angular-grid-layout/tsconfig.lib.json",
-          "projects/angular-grid-layout/tsconfig.spec.json"
+          "projects/ngx-grid-layout/tsconfig.lib.json",
+          "projects/ngx-grid-layout/tsconfig.spec.json"
         ],
         "createDefaultProgram": true
       },

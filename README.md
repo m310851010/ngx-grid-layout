@@ -1,8 +1,8 @@
 # Angular Grid Layout
-[![npm](https://img.shields.io/npm/v/@katoid/angular-grid-layout?style=flat-square)](https://www.npmjs.com/package/@katoid/angular-grid-layout)
-[![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg?style=flat-square)](https://github.com/katoid/angular-grid-layout/blob/main/LICENSE.md)
-[![commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](https://github.com/katoid/angular-grid-layout/commits/main)
-[![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/katoid/angular-grid-layout/compare)
+[![npm](https://img.shields.io/npm/v/@xmagic/ngx-grid-layout?style=flat-square)](https://www.npmjs.com/package/@xmagic/ngx-grid-layout)
+[![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg?style=flat-square)](https://github.com/m310851010/ngx-grid-layout/blob/main/LICENSE.md)
+[![commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](https://github.com/m310851010/ngx-grid-layout/commits/main)
+[![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/m310851010/ngx-grid-layout/compare)
 
 Angular Grid Layout is a grid layout system with draggable and resizable items for Angular Applications. It is mainly designed to create highly customizable dashboards.
 
@@ -24,32 +24,33 @@ Both cover the same necessities.
 - Auto-scrolling while dragging
 
 ## Compatibility
-| Version              | Compatibility       |
-|----------------------|---------------------|
-| \>= 2.0.0            | Angular 14 & 15     |
-| \>= 1.1.0 && < 2.0.0 | Angular 12, 13 & 14 |
-| \>= 0.1.1 && < 1.1.0 | Angular 9, 10 & 11  |
+| Version              | Compatibility                        |
+|----------------------|--------------------------------------|
+| \>= 2.0.0            | Angular 14 & 15                      |
+| \>= 1.1.0 && < 2.0.0 | Angular 12, 13 & 14                  |
+| \>= 0.1.1 && < 1.1.0 | Angular 9, 10 & 11                   |
+| 13.x                 | Angular 13 (Synchronize from master) |
 
 ## Demos
-[Playground](https://katoid.github.io/angular-grid-layout/playground) - [Stackblitz](https://stackblitz.com/edit/angular-grid-layout-playground?file=src%2Fapp%2Fplayground%2Fplayground.component.ts)
+[Playground](https://katoid.github.io/ngx-grid-layout/playground) - [Stackblitz](https://stackblitz.com/edit/ngx-grid-layout-playground?file=src%2Fapp%2Fplayground%2Fplayground.component.ts)
 
-[Custom handles](https://katoid.github.io/angular-grid-layout/custom-handles)
+[Custom handles](https://katoid.github.io/ngx-grid-layout/custom-handles)
 
-[Real life example](https://katoid.github.io/angular-grid-layout/real-life-example)
+[Real life example](https://katoid.github.io/ngx-grid-layout/real-life-example)
 
 ## Installation
 
-To use @katoid/angular-grid-layout in your project install it via [npm](https://www.npmjs.com/package/@katoid/angular-grid-layout):
+To use @xmagic/ngx-grid-layout in your project install it via [npm](https://www.npmjs.com/package/@xmagic/ngx-grid-layout):
 
 ```
-npm install @katoid/angular-grid-layout --save
+npm install @xmagic/ngx-grid-layout --save
 ```
 
 ## Usage
 Import KtdGridModule to the module where you want to use the grid:
 
 ```ts
-import { KtdGridModule } from '@katoid/angular-grid-layout';
+import { KtdGridModule } from '@xmagic/ngx-grid-layout';
 
 @NgModule({
   imports: [KtdGridModule]
@@ -75,7 +76,7 @@ Use it in your template:
 
 Where template variables could be:
 ```ts
-import { ktdTrackById } from '@katoid/angular-grid-layout';
+import { ktdTrackById } from '@xmagic/ngx-grid-layout';
 
 cols: number = 6;
 rowHeight: number = 100;
@@ -197,11 +198,11 @@ startDragManually(startEvent: MouseEvent | TouchEvent);
 - [x] Add example with custom drag handles.
 - [x] Add Real life example with charts and grid items with some kind of controls.
 - [x] Add dragStartThreshold option to grid items.
-- [x] Auto Scroll vertical/horizontal if container is scrollable when dragging a grid item. ([commit](https://github.com/katoid/angular-grid-layout/commit/d137d0e3f40cafdb5fdfd7b2bce4286670200c5d)).
+- [x] Auto Scroll vertical/horizontal if container is scrollable when dragging a grid item. ([commit](https://github.com/m310851010/ngx-grid-layout/commit/d137d0e3f40cafdb5fdfd7b2bce4286670200c5d)).
 - [x] Grid support for minWidth/maxWidth and minHeight/maxHeight on grid items.
-- [x] Add grid gap feature. ([commit](https://github.com/katoid/angular-grid-layout/commit/a8b129d76cb7bf12a63ff92beee5d5bbb28046b3))
-- [x] Customizable drag placeholder. ([commit](https://github.com/katoid/angular-grid-layout/commit/ce7826522f67333359afcac4f10cb3cd4b76f7b0)).
-- [x] rowHeight to support also 'fit' as value instead of only CSS pixels ([commit](https://github.com/katoid/angular-grid-layout/commit/fe7d0e7af9e5ede885a34a9c4700df23012cd1a9)).
+- [x] Add grid gap feature. ([commit](https://github.com/m310851010/ngx-grid-layout/commit/a8b129d76cb7bf12a63ff92beee5d5bbb28046b3))
+- [x] Customizable drag placeholder. ([commit](https://github.com/m310851010/ngx-grid-layout/commit/ce7826522f67333359afcac4f10cb3cd4b76f7b0)).
+- [x] rowHeight to support also 'fit' as value instead of only CSS pixels ([commit](https://github.com/m310851010/ngx-grid-layout/commit/fe7d0e7af9e5ede885a34a9c4700df23012cd1a9)).
 - [x] Check grid compact horizontal algorithm, estrange behaviour when overflowing, also in react-grid-layout.
 - [ ] Grid support for static grid items.
 - [ ] Add all other resize options (now is only available 'se-resize').

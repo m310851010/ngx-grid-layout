@@ -20,8 +20,8 @@
             "dom"
         ],
         "paths": {
-            "@katoid/angular-grid-layout": [
-                "dist/angular-grid-layout"
+            "@xmagic/ngx-grid-layout": [
+                "dist/ngx-grid-layout"
             ]
         }
     },
