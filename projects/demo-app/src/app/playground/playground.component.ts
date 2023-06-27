@@ -3,13 +3,21 @@ import { MatSelectChange } from '@angular/material/select';
 import { fromEvent, merge, Subscription } from 'rxjs';
 import { debounceTime, filter } from 'rxjs/operators';
 import {
-    KtdDragEnd, KtdDragStart, ktdGridCompact, KtdGridComponent, KtdGridLayout, KtdGridLayoutItem, KtdResizeEnd, KtdResizeStart, ktdTrackById
+    KtdDragEnd,
+    KtdDragStart,
+    KtdGridBackgroundCfg,
+    ktdGridCompact,
+    KtdGridComponent,
+    KtdGridLayout,
+    KtdGridLayoutItem,
+    KtdResizeEnd,
+    KtdResizeStart,
+    ktdTrackById
 } from '@xmagic/ngx-grid-layout';
 import { ktdArrayRemoveItem } from '../utils';
 import { DOCUMENT } from '@angular/common';
 import { coerceNumberProperty } from '@angular/cdk/coercion';
 import { MatCheckboxChange } from '@angular/material/checkbox';
-import { KtdGridBackgroundCfg } from '../../../../ngx-grid-layout/src/lib/grid.definitions';
 
 @Component({
     selector: 'ktd-playground',

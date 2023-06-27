@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { KtdGridModule } from '@xmagic/ngx-grid-layout';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { KtdFooterComponent } from '../components/footer/footer.component';
+import {FooterModule} from '../components/footer/footer.module';
 
 const routes: Routes = [
     {
@@ -25,7 +25,7 @@ const routes: Routes = [
         KtdGridModule,
         MatFormFieldModule,
         MatInputModule,
-        KtdFooterComponent
+        FooterModule
     ]
 })
 export class KtdScrollTestModule {}

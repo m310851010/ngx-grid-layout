@@ -88,6 +88,28 @@ layout: KtdGridLayout = [
 ];
 trackById = ktdTrackById
 ```
+引用样式文件,两种方式任选其一:
+
+- 第一种: 在angular.json中引用
+```json
+{
+  "architect": {
+    "build": {
+      "options": {
+        "styles": [
+          "node_modules/ngx-grid-layout/ngx-grid-layout.less"
+        ]
+      }
+    }
+  }
+}
+```
+
+- 第二种: 在styles.less文件导入(只支持less)
+
+```less
+@import "ngx-grid-layout/ngx-grid-layout.less";
+```
 
 ## API
 

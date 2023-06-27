@@ -28,7 +28,7 @@ const routes: Routes = [
     },
     {
         path: 'row-height-fit',
-        loadComponent: () => import('./row-height-fit/row-height-fit.component').then(m => m.KtdRowHeightFitComponent),
+        loadChildren: () => import('./row-height-fit/row-height-fit.module').then(m => m.RowHeightFitModule),
         data: {title: 'Angular Grid Layout - Row Height Fit'}
     },
     {

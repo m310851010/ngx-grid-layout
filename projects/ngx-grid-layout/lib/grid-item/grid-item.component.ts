@@ -17,7 +17,6 @@ import { KTD_GRID_ITEM_PLACEHOLDER, KtdGridItemPlaceholder } from '../directives
 @Component({
     selector: 'ktd-grid-item',
     templateUrl: './grid-item.component.html',
-    styleUrls: ['./grid-item.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class KtdGridItemComponent implements OnInit, OnDestroy, AfterContentInit {

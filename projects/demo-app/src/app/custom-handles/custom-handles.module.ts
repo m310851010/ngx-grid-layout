@@ -4,7 +4,7 @@ import { KtdCustomHandlesComponent } from './custom-handles.component';
 import { KtdGridModule } from '@xmagic/ngx-grid-layout';
 import { RouterModule, Routes } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
-import { KtdFooterComponent } from '../components/footer/footer.component';
+import { FooterModule } from '../components/footer/footer.module';
 
 const routes: Routes = [
     {
@@ -21,7 +21,7 @@ const routes: Routes = [
         RouterModule.forChild(routes),
         MatIconModule,
         KtdGridModule,
-        KtdFooterComponent
+        FooterModule
     ]
 })
 export class KtdCustomHandlesModule {}

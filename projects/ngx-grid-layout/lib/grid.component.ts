@@ -114,7 +114,6 @@ const defaultBackgroundConfig: Required<Omit<KtdGridBackgroundCfg, 'show'>> = {
 @Component({
     selector: 'ktd-grid',
     templateUrl: './grid.component.html',
-    styleUrls: ['./grid.component.scss'],
     encapsulation: ViewEncapsulation.None,
     changeDetection: ChangeDetectionStrategy.OnPush,
     providers: [

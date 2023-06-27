@@ -9,7 +9,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 import { KtdTableSortingComponent } from './table-sorting/table-sorting.component';
 import { MatSortModule } from '@angular/material/sort';
-import { KtdFooterComponent } from '../components/footer/footer.component';
+import {FooterModule} from '../components/footer/footer.module';
 
 const routes: Routes = [
     {
@@ -33,7 +33,7 @@ const routes: Routes = [
         MatCardModule,
         MatTableModule,
         MatSortModule,
-        KtdFooterComponent
+        FooterModule
     ]
 })
 export class KtdRealLifeExampleModule {}

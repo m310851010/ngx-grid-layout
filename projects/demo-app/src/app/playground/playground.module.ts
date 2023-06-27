@@ -8,8 +8,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
 import { MatChipsModule } from '@angular/material/chips';
-import { KtdFooterComponent } from '../components/footer/footer.component';
 import { ColorPickerModule } from "ngx-color-picker";
+import {FooterModule} from '../components/footer/footer.module';
 
 const routes: Routes = [
     {
@@ -31,7 +31,7 @@ const routes: Routes = [
         MatCheckboxModule,
         MatInputModule,
         MatChipsModule,
-        KtdFooterComponent,
+        FooterModule,
         ColorPickerModule
     ]
 })

@@ -68,7 +68,8 @@
             ],
             "styles": [
               "projects/demo-app/src/styles/theme.scss",
-              "projects/demo-app/src/styles/styles.scss"
+              "projects/demo-app/src/styles/styles.scss",
+              "dist/ngx-grid-layout/ngx-grid-layout.less"
             ],
             "scripts": []
           },
