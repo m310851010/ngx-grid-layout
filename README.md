@@ -97,7 +97,7 @@ trackById = ktdTrackById
     "build": {
       "options": {
         "styles": [
-          "node_modules/ngx-grid-layout/ngx-grid-layout.less"
+          "node_modules/@xmagic/ngx-grid-layout/ngx-grid-layout.less"
         ]
       }
     }
@@ -108,7 +108,7 @@ trackById = ktdTrackById
 - 第二种: 在styles.less文件导入(只支持less)
 
 ```less
-@import "ngx-grid-layout/ngx-grid-layout.less";
+@import "@xmagic/ngx-grid-layout/ngx-grid-layout.less";
 ```
 
 ## API
